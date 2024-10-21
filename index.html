@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Pagi</title>
+    <title>Selamat Pagi Sayang</title>
     <style>
         body {
-            background-color: #e0f7fa;
+            background-color: #ffecb3;
             font-family: 'Arial', sans-serif;
-            color: #333;
+            color: #5d4037;
             text-align: center;
             padding: 50px;
         }
 
         h1 {
             font-size: 4em;
-            color: #00796b;
+            color: #ff7043;
             animation: morningAnimation 2s infinite;
+            margin-bottom: 20px;
         }
 
         @keyframes morningAnimation {
@@ -28,14 +29,13 @@
         .message {
             margin: 30px auto;
             padding: 20px;
-            border: 2px solid #00796b;
+            border: 2px solid #ff7043;
             background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 60%;
-        }
-
-        p {
+            border-radius: 10px;
             font-size: 1.5em;
+            line-height: 1.5;
         }
 
         .buttons {
@@ -43,7 +43,7 @@
         }
 
         .btn {
-            background-color: #00796b;
+            background-color: #ff7043;
             color: white;
             border: none;
             padding: 15px 30px;
@@ -55,13 +55,25 @@
         }
 
         .btn:hover {
-            background-color: #004d40;
+            background-color: #c62828;
         }
 
         .footer {
             margin-top: 40px;
             font-size: 1.2em;
-            color: #00796b;
+            color: #ff7043;
+        }
+        
+        .sparkle {
+            display: inline-block;
+            font-size: 0.8em;
+            animation: sparkle 1.5s infinite;
+        }
+
+        @keyframes sparkle {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
         }
     </style>
 </head>
@@ -70,13 +82,21 @@
     <h1>Selamat Pagi!</h1>
 
     <div class="message">
-        <p>Kepada yang terkasih,</p>
-        <p>Semoga harimu dipenuhi kebahagiaan dan cinta. Selamat menjalani aktivitas hari ini!</p>
-        <p>Aku sangat mencintaimu.</p>
+        <p>
+            Good morninggg sayaaangggkuuu, <br>
+            cintaakuuu duniaakuuu cantikuuu! <br>
+            Selamaattt beraktivitasss! <br>
+            <span class="sparkle">✨</span>
+            <span class="sparkle">✨</span>
+            <span class="sparkle">✨</span>
+            <br>
+            I LOVEEE YOUUU SOO MUCHHH! <br>
+        </p>
     </div>
 
     <div class="buttons">
-        <button class="btn" onclick="showLove()">Lebih Banyak Cinta</button>
+        <button class="btn" onclick="showLove()">Beri Cinta!</button>
+        <button class="btn" onclick="surprise()">Surprise!</button>
     </div>
 
     <div class="footer">
@@ -87,6 +107,10 @@
     <script>
         function showLove() {
             alert('Aku mencintaimu lebih setiap harinya!');
+        }
+
+        function surprise() {
+            alert('Kamu adalah segalanya bagiku! ❤️');
         }
     </script>
 
